@@ -1,0 +1,167 @@
+{
+  // UI
+  "window.restoreWindows": "none",
+  "workbench.editor.enablePreview": false,
+  "zenMode.centerLayout": false,
+  // "customizeUI.activityBar": "left",
+  // "customizeUI.font.regular": "OperatorMono-Medium",
+  "workbench.tree.indent": 20,
+  // Editor
+  "editor.smoothScrolling": true,
+  "editor.lightbulb.enabled": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.minimap.enabled": false,
+  // Fonts
+  // @sync os=mac
+  "editor.fontFamily": "'OperatorMono-Bold', 'Fira Code', 'monospace', monospace, 'Droid Sans Fallback'",
+  // @sync os=windows
+  // "editor.fontFamily": "'Operator Mono', 'Fira Code', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontSize": 18,
+  "editor.fontLigatures": true,
+  // "terminal.integrated.fontFamily": "monospace",
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.inheritEnv": false,
+  "debug.console.fontFamily": "'OperatorMono-Bold'",
+  // "debug.console.fontFamily": "'Operator Mono'",
+  "debug.console.fontSize": 16,
+  // Python
+  "python.analysis.extraPaths": [
+    "/ai-team-shared-5/users/afarzaneh/repos/wreckpy",
+    "/ai-team-shared-5/users/afarzaneh/repos/wreckvision",
+    "/ai-team-shared-5/users/afarzaneh/repos/wreckcore"
+  ],
+  // Linting
+  "python.linting.flake8Args": [
+    "--max-line-length=120",
+    "--max-doc-length=80",
+    "--ignore=E402,E722,E501,W503,E203",
+    // DETR: F401,E402,F403,W503,W504
+    // "--ignore=F401"
+    //"--ignore=E501,W503,W504"
+  ],
+  // Theme
+  "workbench.colorTheme": "Moegi Black",
+  "workbench.iconTheme": "ayu",
+  // Theme mods for operator font
+  "editor.tokenColorCustomizations": {
+    "[Nord]": { // [Halcyon, Gruvbox Dark Hard, GitHub Dark Default, City Lights]
+      "textMateRules": [
+        {
+          "name": "italicsify for operator mono",
+          "scope": [
+            // general
+            "emphasis",
+            "invalid",
+            "invalid.deprecated",
+            "support",
+            // markdown
+            "markup.italic",
+            // classes
+            "keyword.expressions-and-types.swift",
+            "keyword.other.this",
+            "variable.language",
+            "variable.parameter.function.language.special",
+            "entity.other.inherited-class",
+            // comments
+            "comment.block.documentation entity.name.type",
+            "comment.block.documentation variable",
+            // functions and methods
+            "entity.name.variable.parameter",
+            "meta.at-rule.function variable",
+            "meta.at-rule.mixin variable",
+            "meta.function.arguments variable.other.php",
+            "meta.selectionset.graphql meta.arguments.graphql variable.arguments.graphql",
+            "variable.parameter",
+            "meta.decorator variable.other.readwrite",
+            "meta.decorator variable.other.property",
+            // yaml
+            "variable.other.alias.yaml",
+          ],
+          "settings": {
+            "fontStyle": "italic"
+          }
+        }
+      ]
+    }
+  },
+  "editor.suggestSelection": "first",
+  // Jupyter
+  "notebook.output.textLineLimit": 500,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "notebook.lineNumbers": "on",
+  "jupyter.askForKernelRestart": true,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "vs-kubernetes": {
+    "vscode-kubernetes.minikube-path.mac": "/Users/ch-afarzaneh_mbp/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+    "vscode-kubernetes.helm-path.mac": "/Users/ch-afarzaneh_mbp/.vs-kubernetes/tools/helm/darwin-amd64/helm"
+  },
+  "redhat.telemetry.enabled": false,
+  // Format on save
+  "editor.formatOnSave": true,
+  "python.formatting.provider": "black",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  // "black"
+  "black-formatter.args": [
+    "--line-length=120",
+    "--target-version=py38"
+  ],
+  // Extensions
+  "markdown.extension.toc.updateOnSave": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.codeLens.enabled": false,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": false,
+    "markdown": false,
+    "python": true
+  },
+  "git.ignoreLegacyWarning": true,
+  "dart.flutterSdkPath": "/Applications/dev/flutter",
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+  "workbench.colorCustomizations": {},
+  "Notes.notesLocation": "/Users/ch-afarzaneh_mbp/repos/vscode-notes",
+  "terminal.external.osxExec": "Warp.app",
+  "codestream.serverUrl": "https://api.codestream.com",
+  "vscode-kubernetes.log-viewer.destination": "Terminal",
+  "vscode-kubernetes.log-viewer.follow": true,
+  "vscode-kubernetes.log-viewer.timestamp": true,
+  "settingsSync.ignoredSettings": [
+    "python.analysis.extraPaths",
+    "vscode-kubernetes.log-viewer.destination",
+    "vs-kubernetes",
+  ],
+  "editor.accessibilitySupport": "off",
+  "azure.resourceFilter": [
+    "0c962464-c095-4258-93ea-d81ad4f22f9a/eafcc36e-d9a4-4686-9955-03e43e7ecfdd",
+    "0c962464-c095-4258-93ea-d81ad4f22f9a/eec41164-03dd-493f-8854-301ba8f2dafe"
+  ],
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "jupyter.interactiveWindow.textEditor.executeSelection": true,
+  // CCC gitlab token
+  "gitlab-mr.accessTokens": {
+    "https://gitlab.aws.cccis.com": "glpat-zZ3epszWny9QK8GYWDrw"
+  }
+}
